@@ -5,12 +5,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.topPage {
+header, footer {
     background-color: black;
+    font-size: 1em;
+    width: 100%;
+    font-weight:100;
+}
+.topPage {
     color: white;
     max-height: 10vh;
-    width: 100%;
-    font-size: 0.8em;
     padding: 3px;
     text-align: center;
 }
@@ -164,6 +167,14 @@ li {
     overflow-x: scroll;
 }
 
+.ThirdBoxPic, .products {
+    transition:all 0.3s ease-in-out;
+}
+
+.ThirdBoxPic:hover, .products:hover {
+    transform: scale(1.05);
+}
+
 
 .ThirdBoxPic {
     display: flex;
@@ -208,14 +219,11 @@ li {
 
 .footer{
     display: flex;
-    background-color: black;
     color: grey;
-    font-size: 1em;
-    font-weight:100;
     justify-content: center;
     align-items: center;
-    width: 100%;
     padding: 10px;
+ 
 }
 
 @media screen and (min-width: 410px) and (max-width: 768px){
